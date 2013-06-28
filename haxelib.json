@@ -1,0 +1,11 @@
+{
+	"name": "openfl-ouya",
+	"url": "http://www.openfl.org",
+	"license": "MIT",
+	"tags": [],
+	"description": "Extension for additional OUYA support",
+	"version": "1.0.0",
+	"releasenote": "Initial version",
+	"contributors": [ "singmajesty" ],
+	"dependencies": {}
+}
