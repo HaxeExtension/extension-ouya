@@ -5,27 +5,27 @@ class OuyaController
 {
 	var __jobject:Dynamic;
 	
-	static inline public var BUTTON_O:Int = 96;
-	static inline public var BUTTON_U:Int = 99;
-	static inline public var BUTTON_Y:Int = 100;
-	static inline public var BUTTON_A:Int = 97;
-	static inline public var BUTTON_L1:Int = 102;
-	static inline public var BUTTON_L2:Int = 104;
-	static inline public var BUTTON_R1:Int = 103;
-	static inline public var BUTTON_R2:Int = 105;
-	static inline public var BUTTON_MENU:Int = 82;
+	static inline public var BUTTON_O:Int = 0; // 96;
+	static inline public var BUTTON_U:Int = 3; // 99;
+	static inline public var BUTTON_Y:Int = 4; // 100;
+	static inline public var BUTTON_A:Int = 1; // 97;
+	static inline public var BUTTON_L1:Int = 6; // 102;
+	static inline public var BUTTON_L2:Int = 8; // 104;
+	static inline public var BUTTON_R1:Int = 7; // 103;
+	static inline public var BUTTON_R2:Int = 9; // 105;
+	static inline public var BUTTON_MENU:Int = 0x01000012; // 82;
 	static inline public var AXIS_LS_X:Int = 0;
 	static inline public var AXIS_LS_Y:Int = 1;
-	static inline public var AXIS_RS_X:Int = 11;
-	static inline public var AXIS_RS_Y:Int = 14;
+	static inline public var AXIS_RS_X:Int = 3; // 11;
+	static inline public var AXIS_RS_Y:Int = 4; // 14;
 	static inline public var AXIS_L2:Int = 17;
 	static inline public var AXIS_R2:Int = 18;
 	static inline public var BUTTON_DPAD_UP:Int = 19;
 	static inline public var BUTTON_DPAD_RIGHT:Int = 22;
 	static inline public var BUTTON_DPAD_DOWN:Int = 20;
 	static inline public var BUTTON_DPAD_LEFT:Int = 21;
-	static inline public var BUTTON_R3:Int = 107;
-	static inline public var BUTTON_L3:Int = 106;
+	static inline public var BUTTON_R3:Int = 11; // 107;
+	static inline public var BUTTON_L3:Int = 10; // 106;
 	static inline public var MAX_CONTROLLERS:Int = 4;
 	static inline public var STICK_DEADZONE:Float = 0.25;
 	
