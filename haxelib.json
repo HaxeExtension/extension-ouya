@@ -4,8 +4,8 @@
 	"license": "MIT",
 	"tags": [],
 	"description": "Extension for additional OUYA support",
-	"version": "1.0.0",
-	"releasenote": "Initial version",
+	"version": "1.0.1",
+	"releasenote": "Minor changes",
 	"contributors": [ "singmajesty" ],
 	"dependencies": {}
 }
