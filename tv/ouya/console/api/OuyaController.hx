@@ -16,8 +16,8 @@ class OuyaController
 	static inline public var BUTTON_MENU:Int = 0x01000012; // 82;
 	static inline public var AXIS_LS_X:Int = 0;
 	static inline public var AXIS_LS_Y:Int = 1;
-	static inline public var AXIS_RS_X:Int = 3; // 11;
-	static inline public var AXIS_RS_Y:Int = 4; // 14;
+	static inline public var AXIS_RS_X:Int = 11;
+	static inline public var AXIS_RS_Y:Int = 14;
 	static inline public var AXIS_L2:Int = 17;
 	static inline public var AXIS_R2:Int = 18;
 	static inline public var BUTTON_DPAD_UP:Int = 19;
