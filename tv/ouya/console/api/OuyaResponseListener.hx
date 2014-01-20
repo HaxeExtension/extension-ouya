@@ -8,7 +8,7 @@ class OuyaResponseListener
 	
     public function new() 
     { 
-	   __jobject = JNI.createStaticMethod("test", "tv.ouya.console.api.HaxeOuyaResponseListener", ""); 
+	   __jobject = JNI.createInterface(this, "tv.ouya.console.api.HaxeOuyaResponseListener", "");  
 	}
 	
 	
