@@ -1,11 +1,15 @@
 package tv.ouya.console.api;
 
+import openfl.utils.JNI;
 
 class OuyaResponseListener
 {
 	var __jobject:Dynamic;
 	
-   public function new() { __jobject = openfl.utils.JNI.createInterface(this,"tv.ouya.console.api.HaxeOuyaResponseListener", classDef ); }
+    public function new() 
+    { 
+	   __jobject = JNI.createStaticMethod("test", "tv.ouya.console.api.HaxeOuyaResponseListener", ""); 
+	}
 	
 	
 	public function onSuccess(arg0:Dynamic /*java.lang.Object*/):Void

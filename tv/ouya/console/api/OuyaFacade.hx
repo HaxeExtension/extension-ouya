@@ -3,7 +3,7 @@ package tv.ouya.console.api;
 
 class OuyaFacade
 {
-	var __jobject:Dynamic;
+	public var __jobject:Dynamic;
 	
 	
 	private static var _getInstance_func:Dynamic;
