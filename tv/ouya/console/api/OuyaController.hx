@@ -155,17 +155,6 @@ class OuyaController
 	public function getName():Dynamic
 	{
 		if (_getName_func == null)
-		_getName_func = openfl.utils.JNI.createMemberMethod("android.view.InputDevice", "getName", "()Ljava/lang/String;", true);
-		var a = new Array<Dynamic>();
-		a.push (getDevice());
-		return _getName_func(a);
-	}
-	
-	private static var _getName_func:Dynamic;
-
-	public function getName():Dynamic
-	{
-		if (_getName_func == null)
 			_getName_func = openfl.utils.JNI.createMemberMethod("android.view.InputDevice", "getName", "()Ljava/lang/String;", true);
 		var a = new Array<Dynamic>();
 		a.push (getDevice());
