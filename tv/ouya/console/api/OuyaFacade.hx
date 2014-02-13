@@ -4,12 +4,12 @@ package tv.ouya.console.api;
 class OuyaFacade
 {
 	private var __jobject:Dynamic;
-	
+
 	public function getJObject():Dynamic
 	{
 		return __jobject;
 	}
-	
+
 	private static var _getInstance_func:Dynamic;
 
 	public static function getInstance():tv.ouya.console.api.OuyaFacade
@@ -19,8 +19,8 @@ class OuyaFacade
 		var a = new Array<Dynamic>();
 		return new tv.ouya.console.api.OuyaFacade(_getInstance_func(a));
 	}
-	
-	
+
+
 	private static var _getOdkVersionNumber_func:Dynamic;
 
 	public static function getOdkVersionNumber():Int
@@ -30,14 +30,14 @@ class OuyaFacade
 		var a = new Array<Dynamic>();
 		return _getOdkVersionNumber_func(a);
 	}
-	
-	
+
+
 	public function new(handle:Dynamic)
 	{
 		__jobject = handle;
 	}
-	
-	
+
+
 	private static var _init_func:Dynamic;
 
 	public function init(arg0:Dynamic /*android.content.Context*/, arg1:String):Void
@@ -50,8 +50,8 @@ class OuyaFacade
 		a.push(arg1);
 		_init_func(a);
 	}
-	
-	
+
+
 	private static var _shutdown_func:Dynamic;
 
 	public function shutdown():Void
@@ -62,8 +62,8 @@ class OuyaFacade
 		a.push (__jobject);
 		_shutdown_func(a);
 	}
-	
-	
+
+
 	private static var _isInitialized_func:Dynamic;
 
 	public function isInitialized():Bool
@@ -74,8 +74,8 @@ class OuyaFacade
 		a.push (__jobject);
 		return _isInitialized_func(a);
 	}
-	
-	
+
+
 	private static var _isRunningOnOUYAHardware_func:Dynamic;
 
 	public function isRunningOnOUYAHardware():Bool
@@ -86,8 +86,8 @@ class OuyaFacade
 		a.push (__jobject);
 		return _isRunningOnOUYAHardware_func(a);
 	}
-	
-	
+
+
 	private static var _setTestMode_func:Dynamic;
 
 	public function setTestMode():Void
@@ -98,8 +98,8 @@ class OuyaFacade
 		a.push (__jobject);
 		_setTestMode_func(a);
 	}
-	
-	
+
+
 	private static var _putGameData_func:Dynamic;
 
 	public function putGameData(arg0:String, arg1:String):Void
@@ -112,8 +112,8 @@ class OuyaFacade
 		a.push(arg1);
 		_putGameData_func(a);
 	}
-	
-	
+
+
 	private static var _getGameData_func:Dynamic;
 
 	public function getGameData(arg0:String):String
@@ -125,8 +125,8 @@ class OuyaFacade
 		a.push(arg0);
 		return _getGameData_func(a);
 	}
-	
-	
+
+
 	private static var _requestProductList_func:Dynamic;
 
 	public function requestProductList(arg0:Dynamic /*java.util.List*/, arg1:tv.ouya.console.api.OuyaResponseListener):Void
@@ -139,8 +139,8 @@ class OuyaFacade
 		a.push(arg1);
 		_requestProductList_func(a);
 	}
-	
-	
+
+
 	private static var _requestPurchase_func:Dynamic;
 
 	public function requestPurchase(arg0:tv.ouya.console.api.Purchasable, arg1:tv.ouya.console.api.OuyaResponseListener):Void
@@ -153,8 +153,8 @@ class OuyaFacade
 		a.push(arg1);
 		_requestPurchase_func(a);
 	}
-	
-	
+
+
 	private static var _requestReceipts_func:Dynamic;
 
 	public function requestReceipts(arg0:tv.ouya.console.api.OuyaResponseListener):Void
@@ -166,8 +166,8 @@ class OuyaFacade
 		a.push(arg0);
 		_requestReceipts_func(a);
 	}
-	
-	
+
+
 	private static var _requestGamerUuid_func:Dynamic;
 
 	public function requestGamerUuid(arg0:tv.ouya.console.api.OuyaResponseListener):Void
@@ -179,8 +179,19 @@ class OuyaFacade
 		a.push(arg0);
 		_requestGamerUuid_func(a);
 	}
-	
-	
+
+	private static var _requestGamerInfo_func:Dynamic;
+
+	public function requestGamerInfo(arg0:tv.ouya.console.api.CancelIgnoringOuyaResponseListener):Void
+	{
+		if(_requestGamerInfo_func == null)
+			_requestGamerInfo_func = openfl.utils.JNI.createMemberMethod("tv.ouya.console.api.OuyaFacade", "requestGamerInfo", "(Ltv/ouya/console/api/CancelIgnoringOuyaResponseListener)V", true);
+		var a = new Array<Dynamic>();
+		a.push(__jobject);
+		a.push(arg0);
+		_requestGamerInfo_func(a);
+	}
+
 	private static var _bindRequestHasBeenMade_func:Dynamic;
 
 	public function bindRequestHasBeenMade():Bool
@@ -191,8 +202,8 @@ class OuyaFacade
 		a.push (__jobject);
 		return _bindRequestHasBeenMade_func(a);
 	}
-	
-	
+
+
 	private static var _onServiceConnected_func:Dynamic;
 
 	public function onServiceConnected(arg0:Dynamic /*android.content.ComponentName*/, arg1:Dynamic /*android.os.IBinder*/):Void
@@ -205,8 +216,8 @@ class OuyaFacade
 		a.push(arg1);
 		_onServiceConnected_func(a);
 	}
-	
-	
+
+
 	private static var _onServiceDisconnected_func:Dynamic;
 
 	public function onServiceDisconnected(arg0:Dynamic /*android.content.ComponentName*/):Void
@@ -218,6 +229,6 @@ class OuyaFacade
 		a.push(arg0);
 		_onServiceDisconnected_func(a);
 	}
-	
-	
+
+
 }
