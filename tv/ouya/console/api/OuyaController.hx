@@ -4,7 +4,7 @@ package tv.ouya.console.api;
 class OuyaController
 {
 	var __jobject:Dynamic;
-	
+
 	static inline public var BUTTON_O:Int = 0; // 96;
 	static inline public var BUTTON_U:Int = 3; // 99;
 	static inline public var BUTTON_Y:Int = 4; // 100;
@@ -28,7 +28,7 @@ class OuyaController
 	static inline public var BUTTON_L3:Int = 10; // 106;
 	static inline public var MAX_CONTROLLERS:Int = 4;
 	static inline public var STICK_DEADZONE:Float = 0.25;
-	
+
 	private static var _init_func:Dynamic;
 
 	public static function init(arg0:Dynamic /*android.content.Context*/):Void
@@ -39,8 +39,8 @@ class OuyaController
 		a.push(arg0);
 		_init_func(a);
 	}
-	
-	
+
+
 	private static var _getControllerByDeviceId_func:Dynamic;
 
 	public static function getControllerByDeviceId(arg0:Int):tv.ouya.console.api.OuyaController
@@ -51,8 +51,8 @@ class OuyaController
 		a.push(arg0);
 		return new tv.ouya.console.api.OuyaController(_getControllerByDeviceId_func(a));
 	}
-	
-	
+
+
 	private static var _getPlayerNumByDeviceId_func:Dynamic;
 
 	public static function getPlayerNumByDeviceId(arg0:Int):Int
@@ -63,8 +63,8 @@ class OuyaController
 		a.push(arg0);
 		return _getPlayerNumByDeviceId_func(a);
 	}
-	
-	
+
+
 	private static var _getControllerByPlayer_func:Dynamic;
 
 	public static function getControllerByPlayer(arg0:Int):tv.ouya.console.api.OuyaController
@@ -75,8 +75,8 @@ class OuyaController
 		a.push(arg0);
 		return new tv.ouya.console.api.OuyaController(_getControllerByPlayer_func(a));
 	}
-	
-	
+
+
 	private static var _onGenericMotionEvent_func:Dynamic;
 
 	public static function onGenericMotionEvent(arg0:Dynamic /*android.view.MotionEvent*/):Bool
@@ -87,8 +87,8 @@ class OuyaController
 		a.push(arg0);
 		return _onGenericMotionEvent_func(a);
 	}
-	
-	
+
+
 	private static var _onKeyDown_func:Dynamic;
 
 	public static function onKeyDown(arg0:Int, arg1:Dynamic /*android.view.KeyEvent*/):Bool
@@ -100,8 +100,8 @@ class OuyaController
 		a.push(arg1);
 		return _onKeyDown_func(a);
 	}
-	
-	
+
+
 	private static var _onKeyUp_func:Dynamic;
 
 	public static function onKeyUp(arg0:Int, arg1:Dynamic /*android.view.KeyEvent*/):Bool
@@ -113,8 +113,31 @@ class OuyaController
 		a.push(arg1);
 		return _onKeyUp_func(a);
 	}
-	
-	
+
+	private static var _showCursor_func:Dynamic;
+
+	public static function showCursor(arg0:Bool):Void
+	{
+		if (_showCursor_func == null)
+			_showCursor_func = openfl.utils.JNI.createStaticMethod("tv.ouya.console.api.OuyaController", "showCursor", "(Z)V", true);
+		var a = new Array<Dynamic>();
+		a.push(arg0);
+		return _showCursor_func(a);
+	}
+
+	private static var _setCurosrBitmap_func:Dynamic;
+
+	public static function setCursorBitmap(arg0:Dynamic /* android.graphics.Bitmap*/, arg1:Int, arg2:Int):Void
+	{
+		if(_setCurosrBitmap_func == null)
+			_setCurosrBitmap_func = openfl.utils.JNI.createStaticMethod("tv.ouya.console.api.OuyaController", "setCursorBitmap", "(Landroid/graphics/BitmapII)V", true);
+		var a = new Array<Dynamic>();
+		a.push(arg0);
+		a.push(arg1);
+		a.push(arg2);
+		return _setCurosrBitmap_func(a);
+	}
+
 	private static var _startOfFrame_func:Dynamic;
 
 	public static function startOfFrame():Void
@@ -124,8 +147,8 @@ class OuyaController
 		var a = new Array<Dynamic>();
 		_startOfFrame_func(a);
 	}
-	
-	
+
+
 	private static var _buttonChangedThisFrame_func:Dynamic;
 
 	public function buttonChangedThisFrame(arg0:Int):Bool
@@ -137,8 +160,8 @@ class OuyaController
 		a.push(arg0);
 		return _buttonChangedThisFrame_func(a);
 	}
-	
-	
+
+
 	private static var _getDevice_func:Dynamic;
 
 	public function getDevice():Dynamic
@@ -160,7 +183,7 @@ class OuyaController
 		a.push (getDevice());
 		return _getName_func(a);
 	}
-	
+
 	private static var _getDeviceId_func:Dynamic;
 
 	public function getDeviceId():Int
@@ -171,8 +194,8 @@ class OuyaController
 		a.push (__jobject);
 		return _getDeviceId_func(a);
 	}
-	
-	
+
+
 	private static var _getAxisValue_func:Dynamic;
 
 	public function getAxisValue(arg0:Int):Float
@@ -184,8 +207,8 @@ class OuyaController
 		a.push(arg0);
 		return _getAxisValue_func(a);
 	}
-	
-	
+
+
 	private static var _getButton_func:Dynamic;
 
 	public function getButton(arg0:Int):Bool
@@ -197,8 +220,8 @@ class OuyaController
 		a.push(arg0);
 		return _getButton_func(a);
 	}
-	
-	
+
+
 	private static var _getPlayerNum_func:Dynamic;
 
 	public function getPlayerNum():Int
@@ -209,12 +232,11 @@ class OuyaController
 		a.push (__jobject);
 		return _getPlayerNum_func(a);
 	}
-	
-	
+
 	public function new(handle:Dynamic)
 	{
 		__jobject = handle;
 	}
-	
-	
+
+
 }
