@@ -122,7 +122,8 @@ class OuyaController
 			_showCursor_func = openfl.utils.JNI.createStaticMethod("tv.ouya.console.api.OuyaController", "showCursor", "(Z)V", true);
 		var a = new Array<Dynamic>();
 		a.push(arg0);
-		return _showCursor_func(a);
+
+		_showCursor_func(a);
 	}
 
 	private static var _setCurosrBitmap_func:Dynamic;
@@ -135,7 +136,8 @@ class OuyaController
 		a.push(arg0);
 		a.push(arg1);
 		a.push(arg2);
-		return _setCurosrBitmap_func(a);
+
+		_setCurosrBitmap_func(a);
 	}
 
 	private static var _startOfFrame_func:Dynamic;
