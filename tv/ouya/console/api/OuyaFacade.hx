@@ -182,10 +182,10 @@ class OuyaFacade
 
 	private static var _requestGamerInfo_func:Dynamic;
 
-	public function requestGamerInfo(arg0:tv.ouya.console.api.CancelIgnoringOuyaResponseListener):Void
+	public function requestGamerInfo(arg0:tv.ouya.console.api.OuyaResponseListener):Void
 	{
 		if(_requestGamerInfo_func == null)
-			_requestGamerInfo_func = openfl.utils.JNI.createMemberMethod("tv.ouya.console.api.OuyaFacade", "requestGamerInfo", "(Ltv/ouya/console/api/CancelIgnoringOuyaResponseListener)V", true);
+			_requestGamerInfo_func = openfl.utils.JNI.createMemberMethod("tv.ouya.console.api.OuyaFacade", "requestGamerInfo", "(Ltv/ouya/console/api/OuyaResponseListener)V", true);
 		var a = new Array<Dynamic>();
 		a.push(__jobject);
 		a.push(arg0);
